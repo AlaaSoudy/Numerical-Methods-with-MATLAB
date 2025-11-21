@@ -7,8 +7,8 @@ df_sym = diff(f_sym, x);
 f = matlabFunction(f_sym);          
 df = matlabFunction(df_sym);   
 x0= input('Enter initial value: ');
-e=input('Enter tolerence: ');
-n=input('Number of itteration: ');
+e=input('Enter tolerance: ');
+n=input('Number of iterations: ');
 if df(x0)~=0
        fprintf('%-6s %-16s %-16s %-16s\n','Iter','xᵢ₋₁','xᵢ','Error');
     for i=1:n
@@ -24,4 +24,5 @@ if df(x0)~=0
     end
 else
      disp('No root.')
+
 end
