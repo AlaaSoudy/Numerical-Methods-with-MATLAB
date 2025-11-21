@@ -4,8 +4,8 @@ f = input('Enter your function f(x): ','s');
 f = str2func(['@(x) ' f]); 
 x0= input('Enter initial value x0: ');
 x1=input('Enter initial value x1: ');
-e=input('Enter tolerence: ');
-n=input('Number of itteration: ');
+e=input('Enter tolerance: ');
+n=input('Number of iterations: ');
 fprintf('%-6s %-16s %-16s %-16s %-16s\n','Iter','xᵢ₋2','xᵢ₋₁','xᵢ','Error');
 for i= 1:n
     x2 = x1-( (x1-x0) / (f(x1)-f(x0)))*f(x1); 
@@ -17,4 +17,5 @@ for i= 1:n
  end
     x0=x1;  
     x1=x2;
+
 end
