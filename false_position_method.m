@@ -4,8 +4,8 @@ f = input('Enter your function f(x): ','s');
 f = str2func(['@(x) ' f]); 
 a= input('Enter a: ');
 b= input('Enter b: ');
-e=input('Enter tolerence: ');
-n=input('Number of itteration: ');
+e=input('Enter tolerance: ');
+n=input('Number of iterations: ');
 if a > b
     temp=a;
     a =b;
@@ -33,4 +33,5 @@ fprintf('%-6d %-14.10f %-14.10f %-14.10f %-16.10f %-16.10f\n', 0, a, b, c, f(c),
   end
    else
     disp('No root in this interval.')
+
 end
